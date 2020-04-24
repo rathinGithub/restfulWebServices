@@ -69,6 +69,7 @@ public class UserResource {
 
 	@GetMapping(path = "/users")
 	public List<User> getUsers() {
+		System.out.println("Adding a test");
 		return userDaoService.findAll();
 	}
 }
